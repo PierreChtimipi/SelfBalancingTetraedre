@@ -21,7 +21,7 @@ void setup() {
   Serial.println("--------------------------------");
   Serial.println("ESP32 Pret !");
   Serial.println(">> VEUILLEZ BRANCHER LA BATTERIE MAINTENANT <<");
-  // Serial.println(">> Ecoutez la musique du moteur... <<");
+  Serial.println(">> Ecoutez la musique du moteur... <<");
 
   // ARMEMENT : On envoie 0 gaz pour dire à l'ESC qu'on est prêt
   esc.writeMicroseconds(1000); 
