@@ -222,7 +222,7 @@ void loop() {
                 {
                     unsigned long elapsed = millis() - state_timer;
                     if (elapsed < 1500) {
-                        // NOUVEAU : Accélération en douceur (Soft-Start) pour ne pas bloquer l'ESC
+                        // Accélération en douceur (Soft-Start) pour ne pas bloquer l'ESC
                         // On passe de 1000 à 1800 sur 1.5 secondes
                         current_pwm = 1000 + (int)((elapsed * 800) / 1500);
                     } else {
@@ -234,7 +234,7 @@ void loop() {
                 break;
 
             case STATE_IMPULSE:
-                current_pwm = 1000; // Coupure des gaz = Freinage sec
+                current_pwm = 1000; // Coupure des gaz
 
                 // On laisse l'inertie lever le robot. S'il se redresse un peu, on passe en équilibre.
                 if (millis() - state_timer > 200 || fabs(angle_deg) < 25.0f) {
