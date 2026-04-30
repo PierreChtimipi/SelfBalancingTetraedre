@@ -1,4 +1,4 @@
-# SelfBalancingTetraedre — Robot Tétraèdre Auto-Équilibrant
+# SelfBalancingTetraedre — Robot TétraCubli
 
 Projet de robot auto-équilibrant en forme de tétraèdre de Reuleaux. Le robot repose sur une face, puis utilise l'élan gyroscopique d'une roue de réaction entraînée par un moteur brushless pour se redresser et maintenir sa position verticale en équilibre instable. Le projet regroupe le firmware embarqué (ESP32), des simulations MATLAB pour valider les lois de commande, et des modèles 3D pour la mécanique.
 
